@@ -18,6 +18,20 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 } */
+
+@font-face {
+  font-family: 'Optimusprinceps';
+  src: url('../../fonts/optimusprinceps/OptimusPrinceps.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Optimusprinceps';
+  src: url('../../fonts/optimusprinceps/OptimusPrincepsSemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -26,7 +40,7 @@ body {
     background-color: #fff879;
     background-size: cover;
     overflow: hidden;
-    font-family: Arial, sans-serif;
+    font-family: 'Optimusprinceps',Arial, sans-serif;
 }
 
 
@@ -125,16 +139,11 @@ body {
 }
 
 #btn-iniciar {
-    padding: 0.3rem 0.7rem;
-    border-radius: 16px;
+    padding: 0;
+    background: transparent;
     border: none;
-    background: #bac9e7;
-    color: white;
-    font-weight: 600;
-    font-size: 1rem;
-    max-height: 24px;
+    height: 24px;
+    width: 100px;
     cursor: pointer;
-    transition: background 0.2s;
     margin-top: 0.2rem;
-    width: 90%;
 }

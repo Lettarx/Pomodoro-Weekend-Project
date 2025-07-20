@@ -18,12 +18,29 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 } */
+
+
+@font-face {
+  font-family: 'Optimusprinceps';
+  src: url('../../fonts/optimusprinceps/OptimusPrinceps.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Optimusprinceps';
+  src: url('../../fonts/optimusprinceps/OptimusPrincepsSemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
     margin: 0;
 	padding: 0;
 	border: 0;
     background-color: #f0e962;
     background-size: cover;
+    font-family: 'Optimusprinceps',Arial, sans-serif;
 }
 
 
