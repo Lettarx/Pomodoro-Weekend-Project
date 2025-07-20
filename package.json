@@ -1,0 +1,28 @@
+{
+  "name": "pomodoro-weekend-project",
+  "version": "1.0.0",
+  "description": "Proyecto de pomodoro para poder enfocarse al trabajar o estudiar, primer proyecto como pareja, con este proyecto se inicia una seccion de weekend project que son proyectos iniciados y finalizados en un fin de semana por Ale y Nico <3",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
+  },
+  "author": "Alejandra Codocedo - Nicolas Valdebenito",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.1",
+    "@electron-forge/maker-deb": "^7.8.1",
+    "@electron-forge/maker-rpm": "^7.8.1",
+    "@electron-forge/maker-squirrel": "^7.8.1",
+    "@electron-forge/maker-zip": "^7.8.1",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
+    "@electron-forge/plugin-fuses": "^7.8.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^37.2.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro - Weekend Project</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<body>
+    
+    <!-- Zona invisible para el hover -->
+    <div id="titlebar-hover-zone"></div>
+    <!-- Tu barra normal -->
+    <div class="titlebar" id="titlebar">
+        <button id="top" class="tb-btn">
+            <img src="../../img_titlebar/alfiler.png" width="20" height="20">
+        </button>
+        <button id="minimize-btn" class="tb-btn">
+            <img src="../../img_titlebar/menos.png" width="20" height="20">
+        </button>
+        <button id="close-btn" class="tb-btn">
+            <img src="../../img_titlebar/cerrar.png" width="20" height="20">
+        </button>
+    </div>
+    <div class="content-menu">
+    <h1 class="title-menu-input">Pomodoro</h1>
+    <div class="input_number">
+        <button id="decrement-pomodoro" class="decrement">-</button>
+        <p class="timer-value" id="pomodoro-timer"></p>
+        <button id="increment-pomodoro" class="increment">+</button>
+    </div>
+    <h1 class="title-menu-input">Descanso</h1>
+    <div class="input_number">
+        <button id="decrement-break" class="decrement">-</button>
+        <p class="timer-value" id="break-timer"></p>
+        <button id="increment-break" class="increment">+</button>
+    </div>
+    <button id="btn-iniciar">Iniciar</button>
+</div>
+
+
+    <script src="js-index.js"></script>
+</body>
+</html>
