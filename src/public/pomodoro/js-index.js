@@ -34,7 +34,10 @@ window.addEventListener('DOMContentLoaded', () => {
     document.getElementById('top').addEventListener('click', ()=>{
         window.electronAPI.alwaysOnTopChange()
     })
-    //ANIMATION
+    //AUDIO SETTINGS
+    const music_start_time = new Audio('../../sounds/ice_efect.mp3')
+    const alert_final_time = new Audio('../../sounds/alert.mp3')
+    
     //TIME SETTINGS
 
     let time_work = null
@@ -64,7 +67,7 @@ window.addEventListener('DOMContentLoaded', () => {
         seconds = time_left % 60
 
         if (time_left ===0) {
-            
+            alert_final_time.play()
             if (state) {
                 time_left = time_work * 60
                 text_title.innerHTML = "Tiempo de trabajo"
@@ -76,6 +79,7 @@ window.addEventListener('DOMContentLoaded', () => {
             threshold_bottom = time_left - (time_left * 0.334)
             threshold_middle = threshold_bottom - (time_left * 0.334)
             document.body.style.backgroundImage = "url('../../pomodoro/Anim-Inicio.gif')"
+            music_start_time.play()
 
         } else {
             text_minutes.innerHTML = String(minutes).padStart(2,"0")

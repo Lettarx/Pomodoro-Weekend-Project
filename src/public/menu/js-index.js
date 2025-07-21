@@ -37,7 +37,13 @@ window.addEventListener('DOMContentLoaded', () => {
         window.electronAPI.alwaysOnTopChange()
     })
 
-    
+    //MUSIC SETTINGS
+
+    // const background_music = new Audio('../../sounds/ice-water.mp3')
+    // background_music.loop = true
+    // background_music.play()
+
+    //POMODORO SETTINGS
 
     input_work_time = document.getElementById("pomodoro-timer")
     input_rest_time = document.getElementById("break-timer")
