@@ -9,6 +9,7 @@ function createWindow(){
         height: 300,
         maxHeight:300,
         maxWidth:200,
+        transparent: true, 
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true, 
