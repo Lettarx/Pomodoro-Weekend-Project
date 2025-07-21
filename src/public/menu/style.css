@@ -49,9 +49,10 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 20px; /* solo una franja delgada arriba */
+    height: 20px;
     z-index: 100;
-    background: transparent; /* invisible */
+    background: rgba(0,0,0,0.01); /* ¡NO transparente puro! */
+    opacity: 0.01;
 }
 
 .titlebar {
@@ -62,17 +63,18 @@ body {
     width: 100vw;
     height: 24px;
     z-index: 101;
-    opacity: 0;
+    opacity: 0.01; /* Nunca la ocultes por completo */
     pointer-events: none;
     transition: opacity 0.18s;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: #f1f1f1;
+    background: rgba(225, 225, 225, 0.245); /* Fondo apenas visible pero real */
 }
 .titlebar.show {
     opacity: 1;
     pointer-events: auto;
+    background: #f1f1f1;
 }
 .tb-btn {
     /* estilos de antes */
