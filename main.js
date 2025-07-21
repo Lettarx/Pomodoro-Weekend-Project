@@ -5,22 +5,22 @@ let win
 
 function createWindow(){
     win = new BrowserWindow({
-        width: 200,
-        height: 300,
+        width: 500,
+        height: 500,
         maxHeight:300,
         maxWidth:200,
         transparent: true, 
+        frame:false,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js'),
             contextIsolation: true, 
             nodeIntegration: false, 
             enableRemoteModule: false 
         },
-        titleBarStyle: 'hidden',
         alwaysOnTop: true
         
     })
-
+    win.setTitle('')
     win.loadFile('src/public/menu/index.html')
 }
 
